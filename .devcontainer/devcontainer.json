@@ -1,0 +1,14 @@
+{
+  "name": "Minimal Codespace with Neovim",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "containerEnv": {
+    "CF_API_TOKEN": "${{ secrets.CF_API_TOKEN }}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
