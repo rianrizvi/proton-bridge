@@ -3,12 +3,13 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "forwardPorts": [1025,1143],
   "containerEnv": {
     "CF_API_TOKEN": "${{ secrets.CF_API_TOKEN }}"
   },
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": ["golang.Go"]
     }
   }
 }
